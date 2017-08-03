@@ -1,10 +1,10 @@
 $(call inherit-product, device/samsung/gts28vewifi/full_gts28vewifi.mk)
 
 # Inherit some common Validus stuff.
-$(call inherit-product, vendor/validus/config/common_full_tablet_wifionly.mk)
-$(call inherit-product, vendor/validus/config/caf_fw.mk)
+$(call inherit-product, vendor/tipsy/config/common_full_tablet_wifionly.mk)
+#$(call inherit-product, vendor/validus/config/caf_fw.mk)
 
-PRODUCT_NAME := validus_gts28vewifi
+PRODUCT_NAME := tipsy_gts28vewifi
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_DEVICE := gts28vewifi
@@ -14,7 +14,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Adam Ovadia (oadam11)" \
     PRODUCT_NAME=gts28vewifixx \
     BUILD_FINGERPRINT=samsung/gts28vewifixx/gts28vewifi:7.0/NRD90M/T713XXU2BQCO:user/release-keys \
     PRIVATE_BUILD_DESC="gts28vewifixx-user 7.0 NRD90M T713XXU2BQCO release-keys"
